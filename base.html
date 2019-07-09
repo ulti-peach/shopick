@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>shopick</title>
+        <link rel="stylesheet" href="style.css" ></link>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    </head>
+
+    <body>
+
+        <!--ヘッダー-->
+        <header class="clearfix">
+            <a href="toppage.html"><image src="images/logo.png" id="logo"></image></a>
+            <form id="searchform" name="searchform" action="base.html" method="get">
+                <input type="search" name="search" id="search" placeholder="商品名、買い物リスト名で検索">
+                <input type="image" src="images/search_left.png" alt="検索" name="searchBtn" id="searchBtn">
+            </form>
+        </header>
+        <!--/ヘッダー-->
+
+        <!--wrapper-->
+        <div id="wrapper">
+
+            <!--メイン-->
+            <main>
+                <div id="togglemenu">
+                    <a href="#" class="btn">
+                        <img src="images/cart.png">
+                        買い物リスト一覧
+                    </a>
+
+                    <a href="#" class="btn2">
+                        <img src="images/list.png">
+                        商品一覧
+                    </a>
+                </div>
+
+            </main>
+            <!--/メイン-->
+
+            <!--サイドバー-->
+            <aside>
+
+                <a href="#" class="btn" id="newlist">
+                    <img src="images/plus.png">
+                    新規買い物リスト
+                </a>
+                <br>
+                <a href="#" class="btn" id="newlink">
+                    <img src="images/plus2.png">
+                    新規商品リンク
+                </a>
+    
+                <dl>
+                    <dt>カテゴリ</dt>
+                    <dd>
+                        <ul>
+                            <li id="li1"><a href="#">ファッション</a></li>
+                            <li id="li2"><a href="#">雑貨</a></li>
+                            <li id="li3"><a href="#">文具</a></li>
+                            <li id="li4"><a href="#">インテリア</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                
+            </aside>
+            <!--/サイドバー-->
+
+            <!--モーダル-->
+
+
+
+            <!--/モーダル-->
+
+
+        </div>
+        <!--/wrapper-->
+
+        
+
+    <script src="script.js"></script>
+
+    </body>
+
+</html>

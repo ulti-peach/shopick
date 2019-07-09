@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>shopick</title>
+        <link rel="stylesheet" href="style.css"></link>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    </head>
+
+    <body>
+
+        <!--ヘッダー-->
+        <header class="clearfix">
+            <a href="toppage.html"><image src="images/logo.png" id="logo"></image></a>
+            <form id="searchform" name="searchform" action="base.html" method="get">
+                <input type="search" name="search" id="search" placeholder="商品名、買い物リスト名で検索">
+                <input type="image" src="images/search_left.png" alt="検索" name="searchBtn" id="searchBtn"> 
+            </form>
+        </header>
+        <!--/ヘッダー-->
+
+        <!--wrapper-->
+        <div id="wrapper">
+
+            <!--メイン-->
+            <main>
+                
+                <div id="togglemenu">
+                    <a href="#" class="btn">
+                            <img src="images/cart.png">
+                        買い物リスト一覧
+                    </a>
+
+                    <a href="#" class="btn2">
+                                <img src="images/list.png">
+                            商品一覧
+                    </a>
+                </div>
+
+                <div id="linkarea">
+                    <p id="result_num">検索結果</p>
+                    <!--ここにリンク集をjQueryで作成する -->
+                </div>    
+
+            </main>
+            <!--/メイン-->
+
+            <!--サイドバー-->
+            <aside>
+
+                <a href="#" class="btn" id="newlist">
+                    <img src="images/plus.png">
+                    新規買い物リスト
+                </a>
+                <br>
+                <a href="#" class="btn" id="newlink">
+                    <img src="images/plus2.png">
+                    新規商品リンク
+                </a>
+
+                <dl>
+                    <dt>カテゴリ</dt>
+                    <dd>
+                        <ul>
+                            <li id="li1"><a href="#">ファッション</a></li>
+                            <li id="li2"><a href="#">雑貨</a></li>
+                            <li id="li3"><a href="#">文具</a></li>
+                            <li id="li4"><a href="#">インテリア</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                
+            </aside>
+            <!--/サイドバー-->
+
+            <!--新規買い物リスト　モーダル-->
+            <div id="overlay"></div>  
+            <div id="modal_newlist">
+                <h1>新しい買い物リストを作成</h1>
+                <img src="images/close.png">
+                <ul>
+                    <li>タイトル<input type="text"></li>
+                    <li>日程<input type="text"></li>
+                    <li>地域<input type="text"></li>
+                    <li>カテゴリ<input type="text"></li> <!--ここをラジオボタンまたはプルダウンリストにする？-->
+                    <li>商品を追加<input type="text"></li> <!--新規商品追加画面にリンクする？-->
+                </ul>
+                <button type="submit" id="submitlist">決定</button>
+                <button type="button" id="backlist">キャンセル</button>
+            </div>
+            <!--/新規買い物リスト　モーダル-->
+
+            <!--新規商品リンク　モーダル-->
+            <div id="overlay"></div>  
+            <div id="modal_newlink">
+                <h1>新しい商品を追加</h1>
+                <img src="images/close.png">
+                <ul>
+                    <li>タイトル<input type="text" id="title"></li>
+                    <li>日程<input type="date" id="date"></li>
+                    <li>地域<input type="text"></li>
+                    <li>
+                            <select>カテゴリ
+                                <option>ファッション</option>
+                                <option>雑貨</option>
+                                <option>文具</option>
+                                <option>インテリア</option>
+                            </select>
+                    </li>
+                    <li>URL<input type="url" id="url"></li>
+                </ul>
+                <button type="submit" id="submitlink">決定</button>
+                <button type="button" id="backlink">キャンセル</button>
+            </div>
+            <!--/新規商品リンク　モーダル-->
+
+
+        </div>
+        <!--/wrapper-->
+
+        
+
+    <script src="script.js"></script>
+
+    </body>
+
+</html>

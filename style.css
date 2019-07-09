@@ -1,0 +1,553 @@
+/*リセットcss*/
+
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+	display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none; /*自分で追加した*/
+}
+
+a:visited { 
+    color: rgba(142,142,147,0.12); /*自分で追加した*/
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*
+リセットcssここまで
+*/
+
+
+/*
+ヘッダー
+*/
+
+header {
+    background-color: #fafafa;
+    border-bottom: solid #D2D2D2 0.5px;
+}
+
+#logo, #searchform {
+    float: left;
+}
+
+
+#logo {
+    width: 160px;
+    height: 40px;
+    margin:24px auto 23px 63px;
+}
+
+input:focus {
+    outline: 0;
+  }
+
+input[type="search"] {
+    width: 909px;
+    height: 53px;
+    background: rgba(142,142,147,0.12);
+    color: #000;
+    border: none;
+    border-radius: 13px;
+    margin: 17px auto 17px 77px;
+    padding-left: 20px;
+    font-family: 'ヒラギノ角ゴシック';
+    font-size: 20px;
+}
+
+#searchBtn {  
+    width: 25px;
+    position: relative;
+    right: 50px;
+}  
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+/*
+ヘッダーここまで
+*/
+
+
+/*
+main
+*/
+
+main {
+    margin-left: 307px;
+    font-size: 20px;
+}
+
+a img {
+    width: 20px;
+}
+
+#togglemenu {
+    margin-top: 20px;
+}
+
+main .btn2 {
+    margin-left: 54px;
+}
+
+/*
+リンク集
+*/
+
+div #linkarea {
+    width: 1100px;
+    height: 600px;
+    margin-top: 5px;
+}
+
+div #linkcell {
+    margin-right: 15px;
+    margin-top: 15px;
+    width: 343px;
+    height: 195px;
+    border: 1px solid #979797;
+    border-radius: 4px;
+    float: left;
+}
+
+#linkcell button {
+    color: #fff;
+    background-color: #DB2B39;
+    padding: 5px;
+    border: none;
+    border-radius: 2px;
+}
+
+#goodslink {
+    font-size: 10px;
+    color: rgba(142,142,147,0.54);
+    border-bottom: 1px solid rgba(142,142,147,0.54);
+}
+
+#date_contents {
+    font-size: 10px;
+    color: rgba(142,142,147,0.54);
+    border: none;
+
+}
+
+/*
+リンク集ここまで
+*/
+
+/*
+mainここまで
+*/
+
+
+/*
+サイドバー
+*/
+
+aside {
+    position: absolute;
+    top: 106px;
+    left: 40px;
+}
+
+aside #newlist {
+    clear: both;
+    display: block;
+    width: 191px;
+    font-size: 20px;
+    padding: 13px 23px 13px 23px;
+    border: none;
+    border-radius: 2px;
+    color: #ffffff;
+    background-color: #FED442;
+    
+}
+
+aside #newlink {
+    display: block;
+    width: 167px;
+    font-size: 20px;
+    padding: 13px 35px 13px 35px;
+    border: 1px solid #FED442;
+    border-radius: 2px;
+    margin-top: 10px;
+    color: #FED442;
+    background-color: #ffffff;
+}
+
+
+aside dl {
+    margin-top: 35px;
+    font-size: 25px;
+}
+
+aside li {
+    margin-top: 25px;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+aside #li1::before {
+    position: relative;
+    left: -10px;
+   
+    display: inline-block;
+   
+    width: 12px;
+    height: 12px;
+   
+    content: '';
+   
+    border-radius: 100%;
+    background: #FB886D;
+    list-style-position: inside;
+
+}
+
+aside #li2::before {
+    position: relative;
+    left: -10px;
+   
+    display: inline-block;
+   
+    width: 12px;
+    height: 12px;
+   
+    content: '';
+   
+    border-radius: 100%;
+    background: #67C5FF;
+    list-style-position: inside;
+
+}
+
+aside #li3::before {
+    position: relative;
+    left: -10px;
+   
+    display: inline-block;
+   
+    width: 12px;
+    height: 12px;
+   
+    content: '';
+   
+    border-radius: 100%;
+    background: #FED442;
+    list-style-position: inside;
+
+}
+
+aside #li4::before {
+    position: relative;
+    left: -10px;
+   
+    display: inline-block;
+   
+    width: 12px;
+    height: 12px;
+   
+    content: '';
+   
+    border-radius: 100%;
+    background: #46CD9F;
+    list-style-position: inside;
+
+}
+
+/*
+サイドバーここまで
+*/
+
+
+/*
+モーダル「新規買い物リスト」
+*/
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);  
+    z-index: 1
+   }
+  
+#modal_newlist {
+    position: fixed;
+    top: 144px;
+    left: 400px;
+    display: none;
+    width: 640px;
+    height: 440px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    z-index: 2
+}
+
+#modal_newlist h1{
+    font-size: 30px;
+    font-weight: normal;
+    padding-bottom: 57px;
+    padding-top: 25px;
+    padding-left: 32px;
+}
+
+#modal_newlist img {
+    width: 30px;
+    position: absolute;
+    top: 25px;
+    right: 32px;
+}
+
+#modal_newlist li {
+    padding-bottom: 20px;
+    padding-left: 32px;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+#modal_newlist input {
+    width: 410px;
+    float: right;
+    margin-right: 78px;
+    border-bottom:1px solid #cccccc;
+    border-right:none;
+    border-left:none;
+    border-top:none;
+    border-radius:0px;
+}
+
+#modal_newlist #submitlist {
+    width: 213px;
+    height: 45px;
+    display: block;
+    float: left;
+    margin-top: 57px;
+    margin-bottom: 37px;
+    margin-left: 76px;
+    font-size: 20px;
+    border: none;
+    border-radius: 2px;
+    color: #ffffff;
+    background-color: #FED442;
+}
+
+#modal_newlist #backlist {
+    width: 213px;
+    height: 45px;
+    display: block;
+    float: left;
+    margin-top: 57px;
+    margin-bottom: 37px;
+    margin-left: 61px;
+    font-size: 20px;
+    border: solid 1px #979797;
+    border-radius: 2px;
+    color: #979797;
+    background-color: #ffffff;
+}
+
+button:focus {
+    outline: 0;
+  }
+
+/*
+モーダル「新規買い物リスト」ここまで
+*/
+
+
+/*
+モーダル「新しいリンクの追加」
+*/
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);  
+    z-index: 1
+   }
+  
+#modal_newlink {
+    position: fixed;
+    top: 144px;
+    left: 400px;
+    display: none;
+    width: 640px;
+    height: 440px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    z-index: 2
+}
+
+#modal_newlink h1{
+    font-size: 30px;
+    font-weight: normal;
+    padding-bottom: 57px;
+    padding-top: 25px;
+    padding-left: 32px;
+}
+
+#modal_newlink img {
+    width: 30px;
+    position: absolute;
+    top: 25px;
+    right: 32px;
+}
+
+#modal_newlink li {
+    padding-bottom: 20px;
+    padding-left: 32px;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+#modal_newlink input {
+    width: 410px;
+    float: right;
+    margin-right: 78px;
+    border-bottom:1px solid #cccccc;
+    border-right:none;
+    border-left:none;
+    border-top:none;
+    border-radius:0px;
+}
+
+#modal_newlink #submitlink {
+    width: 213px;
+    height: 45px;
+    display: block;
+    float: left;
+    margin-top: 57px;
+    margin-bottom: 37px;
+    margin-left: 76px;
+    font-size: 20px;
+    border: none;
+    border-radius: 2px;
+    color: #ffffff;
+    background-color: #FED442;
+}
+
+#modal_newlink #backlink {
+    width: 213px;
+    height: 45px;
+    display: block;
+    float: left;
+    margin-top: 57px;
+    margin-bottom: 37px;
+    margin-left: 61px;
+    font-size: 20px;
+    border: solid 1px #979797;
+    border-radius: 2px;
+    color: #979797;
+    background-color: #ffffff;
+}
+
+/*
+モーダル「新しいリンクの追加」ここまで
+*/
